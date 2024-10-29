@@ -3,13 +3,13 @@ st.title("AI大模型应用产品网")
 col,col1=st.columns(2)
 #语言大模型应用程序入口
 with col:
-    st.image("OIP-C.jfif",use_column_width=True)#图片尽量找大小一样的
+    st.image("ZLY1.jfif",use_column_width=True)#图片尽量找大小一样的
     flag=st.button("御乔畅言",use_container_width=True)
     if flag:
         st.switch_page("pages/youhui.py")
 #文生图大模型应用程序入口
 with col1:
-    st.image("https://c-ssl.duitang.com/uploads/item/202007/04/20200704171945_pgbkb.jpg", use_column_width=True)
+    st.image("ZLY2", use_column_width=True)
     flag = st.button("御乔绘图",use_container_width=True)
     if flag:
         st.switch_page("pages/textToimage.py")
