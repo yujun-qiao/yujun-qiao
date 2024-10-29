@@ -9,7 +9,7 @@ with col:
         st.switch_page("pages/youhui.py")
 #文生图大模型应用程序入口
 with col1:
-    #st.image("logo.png", use_column_width=True)
+    st.image("https://img.zcool.cn/community/01129957723f4b0000018c1b6692bb.jpg@2o.jpg", use_column_width=True)
     flag = st.button("御乔绘图",use_container_width=True)
     if flag:
         st.switch_page("pages/textToimage.py")
