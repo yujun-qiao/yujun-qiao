@@ -9,7 +9,7 @@ with col:
         st.switch_page("pages/youhui.py")
 #文生图大模型应用程序入口
 with col1:
-    st.image("ZLY2", use_column_width=True)
+    st.image("ZLY2.jfif", use_column_width=True)
     flag = st.button("御乔绘图",use_container_width=True)
     if flag:
         st.switch_page("pages/textToimage.py")
