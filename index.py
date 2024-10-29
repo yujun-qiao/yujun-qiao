@@ -3,7 +3,7 @@ st.title("AI大模型应用产品网")
 col,col1=st.columns(2)
 #语言大模型应用程序入口
 with col:
-    #st.image("https://img.zcool.cn/community/01129957723f4b0000018c1b6692bb.jpg@2o.jpg",use_column_width=True)#图片尽量找大小一样的
+    st.image("OIP-C.jfif",use_column_width=True)#图片尽量找大小一样的
     flag=st.button("御乔畅言",use_container_width=True)
     if flag:
         st.switch_page("pages/youhui.py")
