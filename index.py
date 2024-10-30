@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("AIcomeing~~~")
-col,col1=st.columns(2)
+col,col1,col2=st.columns(3)
 #语言大模型应用程序入口
 with col:
     st.image("ZLY1.jfif",use_column_width=True)#图片尽量找大小一样的
@@ -9,10 +9,15 @@ with col:
         st.switch_page("pages/youhui.py")
 #文生图大模型应用程序入口
 with col1:
-    st.image("ZLY2.jfif", use_column_width=True)
+    st.image("ZLY1.jfif", use_column_width=True)
     flag = st.button("御乔绘图",use_container_width=True)
     if flag:
         st.switch_page("pages/textToimage.py")
+with col1:
+    st.image("ZLY1.jfif", use_column_width=True)
+    flag = st.button("职业问答",use_container_width=True)
+    if flag:
+        st.switch_page("pages/job-ai.py")
 # c1,c2,c3,c4,c5=st.columns(5)
 # with c1:
 #    flag= st.button("基础版")
