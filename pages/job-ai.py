@@ -27,7 +27,7 @@ db = SQLDatabase.from_uri("mysql+pymysql://root:root@localhost:3306/job")
 model = ChatOpenAI(
     temperature=0.95,
     model="glm-4",
-    openai_api_key="111",
+    openai_api_key="cea8acbc4cf7c069ff1bbdb7bfa4fefa.gZVpuDGVp8MpQwfz",
     openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
 )
 #3、使用create_sql_query_chain把数据库和大模型组合起来
@@ -38,7 +38,7 @@ beau_chain=LLMChain(llm=model,prompt=prompt)
 
 
 # 通过界面制作一个聊天输入框
-problem = st.chat_input("请输入你的问题")
+problem = st.chat_input("请问")
 # 判断输入框有没有填写信息
 if problem:
     with st.chat_message("user"):
