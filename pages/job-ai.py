@@ -22,7 +22,7 @@ else:
             st.write(ele["content"])
 
 # 1、构建数据库
-db = SQLDatabase.from_uri("mysql+pymysql://root:root@localhost:3306/job")
+db = SQLDatabase.from_uri("mysql+pymysql://root:admin@localhost:3307/books")
 # 2、构建大模型
 model = ChatOpenAI(
     temperature=0.95,
