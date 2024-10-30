@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("AI大模型应用产品网")
+st.title("AIcomeing~~~")
 col,col1=st.columns(2)
 #语言大模型应用程序入口
 with col:
