@@ -15,13 +15,13 @@ model=ChatOpenAI(
 if "memory" not in st.session_state:
     st.session_state.memory = ConversationBufferMemory()
 memory=ConversationBufferMemory(memory_key="history")
-prompt=PromptTemplate.from_template("你叫柳如烟，你现在扮演的是一个女朋友的角色，你现在要和你的男朋友对话，你男朋友的话是{input}，你需要对你的男朋友的话做出回应，而且只做回应，你和你男朋友的历史对话为{history}")
+prompt=PromptTemplate.from_template("你叫克拉，你现在扮演的是一个朋友的角色，你现在要和你的朋友对话，你朋友的话是{input}，你需要对你的朋友的话做出回应，而且只做回应，你和你朋友的历史对话为{history}")
 chain=LLMChain(
     llm=model,
     prompt=prompt,
     memory=st.session_state.memory,
 )
-st.title("村里有个姑娘叫小芳")
+st.title("小十七正在为您服务")
 
 
 if "cache" not in st.session_state:
@@ -33,7 +33,7 @@ else:
 
 #创建一个聊天框
 
-problem=st.chat_input("你的小芳正在等待你的回应")
+problem=st.chat_input("你的小十七正在等待你的回应")
 #判断是用来确定用户有没有输入问题，如果输入问题
 if problem:
     #1.将用户的问题输出到界面上，以用户的角色输出
